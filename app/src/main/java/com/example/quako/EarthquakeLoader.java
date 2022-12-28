@@ -28,7 +28,6 @@ public class EarthquakeLoader extends AsyncTaskLoader<List<Earthquakes>> {
         forceLoad();
     }
 
-
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public List<Earthquakes> loadInBackground() {

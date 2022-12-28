@@ -5,7 +5,6 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.annotation.RequiresApi;
-import androidx.loader.content.AsyncTaskLoader;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -133,7 +132,6 @@ public final class QueryUtils {
         // is formatted, a JSONException exception object will be thrown.
         // Catch the exception so the app doesn't crash, and print the error message to the logs.
         try {
-
             JSONObject data = new JSONObject(earthquakeJSON);
             JSONArray features = data.getJSONArray("features");
             for (int i = 0 ; i < features.length() ; i++) {
